@@ -40,6 +40,4 @@ func (c *Client) GetNodes(svc string, tag string) ([]string, error) {
 			discovery = append(discovery, address)
 		}
 		return discovery, nil
-	}
-
 }
