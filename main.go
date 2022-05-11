@@ -29,7 +29,7 @@ func NewClient(address string) (*Client, error) {
 }
 
 func (c *Client) GetNodes(svc string, tag string) ([]string, error) {
-		service, _, err := c.Catalog().Service(svc, tag, _)
+		service, _, err := c.Catalog().Service(svc, tag, nil)
 		if err != nil {
 			return nil, err
 		}
